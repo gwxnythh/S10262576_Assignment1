@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSKZ SHOP</title>
+
+  <!-- 
+    - #favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/icon.png">
+
+  <!-- 
+    - #css
+  -->
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - #google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- 
+    - #preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+</head>
+
+<body id="top">
+  <!-- 
+    - #HEADER
+  -->
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">Free Shipping For Orders SGD$50+</p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="input-wrapper">
+          <input type="search" name="search" placeholder="Search product" class="search-field">
+
+          <button class="search-submit" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="skzlogo">
+        </a>
+
+        <div class="header-actions">
+
+          <button class="header-action-btn" aria-label="search">
+            <ion-icon name="search-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+          </button>
+
+          <div class="header-action-btn" aria-label="user">
+            <img src="./assets/images/chanicon.jpg" class="user-pic" onclick="toggleMenu()">
+
+            <div class="sub-menu-wrap" id="subMenu">
+              <div class="sub-menu">
+                <div class="user-info">
+                  <img src="./assets/images/chanicon.jpg">
+                  <h3>Hi, gwxnny</h3>
+                </div>
+                <hr>
+
+                <a href="#" class="sub-menu-link">
+                  <ion-icon name="person-outline" aria-hidden="true" class="ics"></ion-icon>
+                  <p>Edit Profile</p>
+                  <span><ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                  <ion-icon name="settings-outline" aria-hidden="true" class="ics"></ion-icon>
+                  <p>Settings & Privacy</p>
+                  <span><ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                  <ion-icon name="help-circle-outline" aria-hidden="true" class="ics"></ion-icon>
+                  <p>Help & Support</p>
+                  <span><ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon></span>
+                </a>
+                <a href="login.html" class="sub-menu-link">
+                  <ion-icon name="log-out-outline" aria-hidden="true" class="ics"></ion-icon>
+                  <p>Logout</p>
+                  <span><ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button class="header-action-btn" aria-label="favourite item">
+            <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>
+
+          <button class="header-action-btn" aria-label="cart item">
+            <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>
+
+
+
+        </div>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index.html" class="navbar-link has-after">Home</a>
+            </li>
+
+            <li>
+              <a href="shop.html" class="navbar-link has-after">Shop</a>
+            </li>
+
+            <li>
+              <a href="gallery.html" class="navbar-link has-after">Gallery</a>
+            </li>
+
+            <li class="navbar-item-dropdown">
+              <a href="#" class="navbar-link has-after">Members</a>
+              <div class="dropdown-content">
+                <a href="profile-bangchan.html">Bangchan</a>
+                <a href="profile-leeknow.html">Leeknow</a>
+                <a href="profile-changbin.html">Changbin</a>
+                <a href="profile-hyunjin.html">Hyunjin</a>
+                <a href="profile-han.html">Han</a>
+                <a href="profile-felix.html">Felix</a>
+                <a href="profile-seungmin.html">Seungmin</a>
+                <a href="profile-jeongin.html">Jeongin</a>
+              </div>
+            </li>
+
+            <li>
+              <a href="contactus.html" class="navbar-link has-after">Contact Us</a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" alt="skzlogo">
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+        </li>
+
+        <li>
+          <a href="shop.html" class="navbar-link" data-nav-link>Shop</a>
+        </li>
+
+        <li>
+          <a href="gallery.html" class="navbar-link" data-nav-link>Gallery</a>
+        </li>
+
+        <li class="navbar-item-dropdown">
+          <a href="#" class="navbar-link">Members</a>
+          <div class="dropdown-content">
+            <a href="profile-bangchan.html">Bangchan</a>
+            <a href="profile-leeknow.html">Leeknow</a>
+            <a href="profile-changbin.html">Changbin</a>
+            <a href="profile-hyunjin.html">Hyunjin</a>
+            <a href="profile-han.html">Han</a>
+            <a href="profile-felix.html">Felix</a>
+            <a href="profile-seungmin.html">Seungmin</a>
+            <a href="profile-jeongin.html">Jeongin</a>
+          </div>
+        </li>
+
+        <li>
+          <a href="contactus.html" class="navbar-link" data-nav-link>Contact Us</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+  <!-- 
+    - #POP-UP SALES OFFER
+  -->
+  <div class="popup-overlay"></div>
+  <div class="popup">
+    <div class="contentBox">
+      <div class="close"></div>
+      <div class="imgBx">
+        <img src="./assets/images/gift.webp" alt="offer">
+      </div>
+      <div class="content">
+        <div>
+          <h3>Sales Up To</h3>
+          <h2>30<sup>%</sup><span> Off</span></h2>
+          <p>*t&cs applies</p>
+          <a href="shop.html">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+      <section class="section hero" id="home" aria-label="hero" data-section>
+        <div class="container">
+
+          <ul class="has-scrollbar">
+
+            <!-- 
+            - #BANNER 1
+            -->
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-1.jpg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    Stray Kids <br>
+                    Lastest 樂-STAR ALBUM
+                  </h1>
+
+                  <p class="hero-text">
+                    Out Now! Comes with different Pre-Order benefits.
+                  </p>
+
+                  <p class="price">Starting at $11.91</p>
+
+                  <a href="shop.html" class="btn btn-primary">Shop Now</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <!-- 
+            - #BANNER 2
+            -->
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-2.jpg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    Stray Kids <br>
+                    Lastest 樂-STAR ALBUM
+                  </h1>
+
+                  <p class="hero-text">
+                    Buy Now!
+                  </p>
+
+                  <p class="price">Starting at $14.70</p>
+
+                  <a href="shop.html" class="btn btn-primary">Shop Now</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <!-- 
+            - #BANNER 3
+            -->
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/images/hero-banner-3.jpg')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    12.12 SALE <br>
+                    UP TO 35% OFF
+                  </h1>
+
+                  <p class="hero-text">
+                    BUY 1 GET 1 FREE
+                  </p>
+
+                  <p class="price">Starting at $11.91</p>
+
+                  <a href="shop.html" class="btn btn-primary">Shop Now</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #FEATURE
+      -->
+      <section class="section feature" aria-label="feature" data-section>
+        <div class="container">
+
+          <h2 class="h2-large section-title">About</h2>
+
+          <ul class="flex-list">
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-1.jpg" width="204" height="236" loading="lazy" alt="Guaranteed PURE"
+                  class="card-icon">
+
+                <h3 class="h3 card-title">樂-STAR</h3>
+
+                <p class="card-text">
+                  Lastest Comeback from Stray Kids, on Nov 10
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-2.jpg" width="204" height="236" loading="lazy"
+                  alt="Completely Cruelty-Free" class="card-icon">
+
+                <h3 class="h3 card-title">Motto</h3>
+
+                <p class="card-text">
+                  STRAY KIDS EVERYWHERE ALL AROUND THE WORLD YOU MAKE STRAY KIDS STAY
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-3.jpg" width="204" height="236" loading="lazy"
+                  alt="Ingredient Sourcing" class="card-icon">
+
+                <h3 class="h3 card-title">Company</h3>
+
+                <p class="card-text">
+                  Stray Kids, an 8 member group under JYP Entertainment
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #COLLECTION
+      -->
+      <section class="section collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+
+          <ul class="collection-list">
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Products</h2>
+
+                <p class="card-text">Albums & Merch</p>
+
+                <a href="shop.html" class="btn-link">
+                  <span class="span">Shop Now</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-1.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Members</h2>
+
+                <p class="card-text">Get to know Stray Kids!</p>
+
+                <a href="#" class="btn-link">
+                  <span class="span">View More</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-2.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Gallery</h2>
+
+                <p class="card-text">Just Look At Them!</p>
+
+                <a href="gallery.html" class="btn-link">
+                  <span class="span">View More</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/collection-3.jpg')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #SKZ SLOGAN SECTION
+      -->
+      <section class="moving-text">
+        <span>YOU MAKE STRAY KIDS STAY</span>
+      </section>
+
+      <!-- 
+        - #SHOP
+      -->
+      <section class="section shop" id="shop" aria-label="shop" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Trending Products</h2>
+
+            <a href="shop.html" class="btn-link">
+              <span class="span">Shop All Products</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/product-01.jpg" width="300" height="300" loading="lazy"
+                    alt="Stray Kids Mini Album 樂-STAR (ROCK VER., ROLL VER.)" class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to favourites">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+
+                  <ul class="badge-list">
+
+                    <li>
+                      <div class="badge pink">NEW</div>
+                    </li>
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Stray Kids Mini Album 樂-STAR (ROCK & ROLL VER.)</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="20.10">$20.10</data>
+                  </div>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">657 reviews</p>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="scrollbar-item">
+
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/product-08.jpg" width="300" height="300" loading="lazy"
+                    alt="Stray Kids The 3rd Album ★★★★★ (5-STAR) (DIGIPACK VER.)" class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to favourites" title="add to favourites">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                  <ul class="badge-list">
+
+                    <li>
+                      <div class="badge red">SALE</div>
+                    </li>
+
+                    <li>
+                      <div class="badge green">-19%</div>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Stray Kids The 3rd Album (5-STAR) (DIGIPACK VER.)</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <del class="del">$14.70</del>
+                    <data class="price" value="11.91">$11.91</data>
+                  </div>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">324 reviews</p>
+                  </div>
+
+                </div>
+
+            </li>
+
+            <li class="scrollbar-item">
+
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/product-04.jpg" width="300" height="300" loading="lazy"
+                    alt="Stray Kids Mini Album 樂-STAR (POSTCARD VER.)" class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to favourites" title="add to favourites">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                  <ul class="badge-list">
+
+                    <li>
+                      <div class="badge pink">NEW</div>
+                    </li>
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Stray Kids Mini Album 樂-STAR (POSTCARD VER.)</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="14.70">$14.70</data>
+                  </div>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">424 reviews</p>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="scrollbar-item">
+
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/product-06.jpg" width="300" height="300" loading="lazy"
+                    alt="Stray Kids The 3rd Album ★★★★★ (5-STAR) (LIMITED VER.)" class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to favourites" title="add to favourites">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Stray Kids The 3rd Album (5-STAR) (LIMITED VER.)</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="22.10">$22.10</data>
+                  </div>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">349 reviews</p>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="scrollbar-item">
+
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/product-02.jpg" width="300" height="300" loading="lazy"
+                    alt="Stray Kids Mini Album 樂-STAR (HEADLINER VER.)" class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to favourites" title="add to favourites">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                  <ul class="badge-list">
+
+                    <li>
+                      <div class="badge pink">NEW</div>
+                    </li>
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Stray Kids Mini Album 樂-STAR (HEADLINER VER.)</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="20.10">$20.10</data>
+                  </div>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">897 reviews</p>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="scrollbar-item">
+
+              <div class="product-card">
+
+                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
+                  <img src="./assets/images/product-07.jpg" width="300" height="300" loading="lazy"
+                    alt="[SET] Stray Kids The 3rd Album ★★★★★ (5-STAR)" class="img-cover">
+
+                  <ul class="card-action-list">
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="card-action-btn" aria-label="add to favourites" title="add to favourites">
+                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                      </button>
+                    </li>
+
+                  </ul>
+                </a>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">[SET] Stray Kids The 3rd Album (5-STAR)</a>
+                  </h3>
+
+                  <div class="card-price">
+                    <data class="price" value="66">$66.00</data>
+                  </div>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">495 reviews</p>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #BANNER
+      -->
+      <section class="section banner" aria-label="banner" data-section>
+        <div class="container">
+
+          <ul class="banner-list">
+
+            <li>
+              <div class="banner-card banner-card-1 has-before hover:shine">
+
+                <p class="card-subtitle">New Collection</p>
+
+                <h2 class="h2 card-title">樂-STAR OUT NOW!</h2>
+
+                <a href="shop.html" class="btn btn-secondary">Shop Now</a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/banner-1.jpg')"></div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="banner-card banner-card-2 has-before hover:shine">
+
+                <h2 class="h2 card-title">Up to 20%</h2>
+
+                <p class="card-text">
+                  Explore the new Stray Kids Album Now!
+                </p>
+
+                <a href="shop.html" class="btn btn-secondary">Shop Now</a>
+
+                <div class="has-bg-image" style="background-image: url('./assets/images/banner-2.jpg')"></div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+  <footer class="footer" data-section>
+    <div class="container">
+      <div class="footer-top">
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">GSKZ SHOP</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">
+              Find <a href="https://maps.app.goo.gl/ziDD5cWyWXiW5H4FA" target="_blank" class="link">Our Store</a>
+            </p>
+          </li>
+
+          <li>
+            <p class="footer-list-text bold">+82 327-87-02151</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">Responsibility@Thejypshop.Com</p>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Members</p>
+          </li>
+
+          <li>
+            <a href="profile-bangchan.html" class="footer-link">Bangchan</a>
+          </li>
+
+          <li>
+            <a href="profile-leeknow.html" class="footer-link">LeeKnow</a>
+          </li>
+
+          <li>
+            <a href="profile-changbin.html" class="footer-link">Changbin</a>
+          </li>
+
+          <li>
+            <a href="profile-hyunjin.html" class="footer-link">Hyunjin</a>
+          </li>
+
+          <li>
+            <a href="profile-han.html" class="footer-link">Han</a>
+          </li>
+
+          <li>
+            <a href="profile-felix.html" class="footer-link">Felix</a>
+          </li>
+
+          <li>
+            <a href="profile-seungmin.html" class="footer-link">Seungmin</a>
+          </li>
+
+          <li>
+            <a href="profile-jeongin.html" class="footer-link">Jeongin</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Pages</p>
+          </li>
+
+          <li>
+            <a href="shop.html" class="footer-link">Shop</a>
+          </li>
+
+          <li>
+            <a href="gallery.html" class="footer-link">Gallery</a>
+          </li>
+
+          <li>
+            <a href="contactus.html" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+          <p class="newsletter-title">Subscribe To Us!</p>
+
+          <p class="newsletter-text">
+            Enter your email below to keep us with our new products!
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email address" required
+              class="email-field">
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+
+        <div class="wrapper">
+          <p class="copyright">
+            &copy; 2023 Ggwendolynn Lee Rasni
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://twitter.com/Stray_Kids?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                target="_blank" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://open.spotify.com/artist/2dIgFjalVxs4ThymZ67YCE?si=zKUfOdSCSfex28QpHHdmJg" target="_blank"
+                class="social-link">
+                <ion-icon name="musical-notes-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/realstraykids/?hl=en" target="_blank" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/@StrayKids" target="_blank" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.png" width="179" height="26" loading="lazy" alt="skzlogo">
+        </a>
+
+        <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - #javascript
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - #account/favourites/shopping bag ICONS [ionicon link]
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

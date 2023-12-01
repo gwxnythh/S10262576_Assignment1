@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSKZ SHOP</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./assets/images/icon.png">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body id="top">
+    <!-- 
+    - #HEADER
+    -->
+    <header class="header">
+
+        <div class="alert">
+            <div class="container">
+                <p class="alert-text">Free Shipping For Orders SGD$50+</p>
+            </div>
+        </div>
+
+        <div class="header-top" data-header>
+            <div class="container">
+
+                <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+
+                <div class="input-wrapper">
+                    <input type="search" name="search" placeholder="Search product" class="search-field">
+
+                    <button class="search-submit" aria-label="search">
+                        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.png" width="179" height="26" alt="skzlogo">
+                </a>
+
+                <div class="header-actions">
+
+                    <button class="header-action-btn" aria-label="search">
+                        <ion-icon name="search-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <div class="header-action-btn" aria-label="user">
+                        <img src="./assets/images/chanicon.jpg" class="user-pic" onclick="toggleMenu()">
+
+                        <div class="sub-menu-wrap" id="subMenu">
+                            <div class="sub-menu">
+                                <div class="user-info">
+                                    <img src="./assets/images/chanicon.jpg">
+                                    <h3>Hi, gwxnny</h3>
+                                </div>
+                                <hr>
+
+                                <a href="#" class="sub-menu-link">
+                                    <ion-icon name="person-outline" aria-hidden="true" class="ics"></ion-icon>
+                                    <p>Edit Profile</p>
+                                    <span><ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon></span>
+                                </a>
+                                <a href="#" class="sub-menu-link">
+                                    <ion-icon name="settings-outline" aria-hidden="true" class="ics"></ion-icon>
+                                    <p>Settings & Privacy</p>
+                                    <span><ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon></span>
+                                </a>
+                                <a href="#" class="sub-menu-link">
+                                    <ion-icon name="help-circle-outline" aria-hidden="true" class="ics"></ion-icon>
+                                    <p>Help & Support</p>
+                                    <span><ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon></span>
+                                </a>
+                                <a href="login.html" class="sub-menu-link">
+                                    <ion-icon name="log-out-outline" aria-hidden="true" class="ics"></ion-icon>
+                                    <p>Logout</p>
+                                    <span><ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="header-action-btn" aria-label="favourite item">
+                        <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+                        <span class="btn-badge">0</span>
+                    </button>
+
+                    <button class="header-action-btn" aria-label="cart item">
+                        <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+
+                        <span class="btn-badge">0</span>
+                    </button>
+
+
+
+                </div>
+
+                <nav class="navbar">
+                    <ul class="navbar-list">
+
+                        <li>
+                            <a href="index.html" class="navbar-link has-after">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="shop.html" class="navbar-link has-after">Shop</a>
+                        </li>
+
+                        <li>
+                            <a href="gallery.html" class="navbar-link has-after">Gallery</a>
+                        </li>
+
+                        <li class="navbar-item-dropdown">
+                            <a href="#" class="navbar-link has-after">Members</a>
+                            <div class="dropdown-content">
+                                <a href="profile-bangchan.html">Bangchan</a>
+                                <a href="profile-leeknow.html">Leeknow</a>
+                                <a href="profile-changbin.html">Changbin</a>
+                                <a href="profile-hyunjin.html">Hyunjin</a>
+                                <a href="profile-han.html">Han</a>
+                                <a href="profile-felix.html">Felix</a>
+                                <a href="profile-seungmin.html">Seungmin</a>
+                                <a href="profile-jeongin.html">Jeongin</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="contactus.html" class="navbar-link has-after">Contact Us</a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+    </header>
+
+    <!-- 
+    - #MOBILE NAVBAR
+    -->
+    <div class="sidebar">
+        <div class="mobile-navbar" data-navbar>
+
+            <div class="wrapper">
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.png" width="179" height="26" alt="skzlogo">
+                </a>
+
+                <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+            </div>
+
+            <ul class="navbar-list">
+
+                <li>
+                    <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                </li>
+
+                <li>
+                    <a href="shop.html" class="navbar-link" data-nav-link>Shop</a>
+                </li>
+
+                <li>
+                    <a href="gallery.html" class="navbar-link" data-nav-link>Gallery</a>
+                </li>
+
+                <li class="navbar-item-dropdown">
+                    <a href="#" class="navbar-link">Members</a>
+                    <div class="dropdown-content">
+                        <a href="profile-bangchan.html">Bangchan</a>
+                        <a href="profile-leeknow.html">Leeknow</a>
+                        <a href="profile-changbin.html">Changbin</a>
+                        <a href="profile-hyunjin.html">Hyunjin</a>
+                        <a href="profile-han.html">Han</a>
+                        <a href="profile-felix.html">Felix</a>
+                        <a href="profile-seungmin.html">Seungmin</a>
+                        <a href="profile-jeongin.html">Jeongin</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="contactus.html" class="navbar-link" data-nav-link>Contact Us</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+
+    <main>
+        <article>
+            <section>
+                <div class="product-container flex">
+                    <div class="left">
+                        <div class="main-image">
+                            <img src="./assets/images/products/limited_ver.jpg" alt="limitedver" class="slide">
+                        </div>
+                        <div class="img-option flex">
+                            <img src="./assets/images/products/limited_ver.jpg" onclick="img('./assets/images/products/limited_ver.jpg')">
+                            <img src="./assets/images/products/limited_ver_pic.jpg" onclick="img('./assets/images/products/limited_ver_pic.jpg')">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h3>Stray Kids Mini Album 樂-STAR (LIMITED STAR VER.)</h3>
+                        <h4> <small>$</small>20.10</h4>
+                        <p>* The special gifts initially prepared in a limited quantity have been closed.<br>
+                            * Pre-Order Benefits are until run out</p>
+                        <h5>Version:</h5>
+                        <div class="color flex" id="colorSelector">
+                            <p>NIL</p>
+                        </div>
+                        <h5>Quantity:</h5>
+                        <div class="quantity-wrapper">
+                            <span class="minus">-</span>
+                            <span class="num">01</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <button onclick="
+                        addProductToCart(
+                        'images/products/limited_ver.jpg',
+                        'Stray Kids Mini Album 樂-STAR (LIMITED VER.)',
+                        '$20.10','NIL', 1)">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+    -->
+    <footer class="footer" data-section>
+        <div class="container">
+            <div class="footer-top">
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">GSKZ SHOP</p>
+                    </li>
+
+                    <li>
+                        <p class="footer-list-text">
+                            Find <a href="https://maps.app.goo.gl/ziDD5cWyWXiW5H4FA" target="_blank" class="link">Our
+                                Store</a>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p class="footer-list-text bold">+82 327-87-02151</p>
+                    </li>
+
+                    <li>
+                        <p class="footer-list-text">Responsibility@Thejypshop.Com</p>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">Members</p>
+                    </li>
+
+                    <li>
+                        <a href="profile-bangchan.html" class="footer-link">Bangchan</a>
+                    </li>
+
+                    <li>
+                        <a href="profile-leeknow.html" class="footer-link">LeeKnow</a>
+                    </li>
+
+                    <li>
+                        <a href="profile-changbin.html" class="footer-link">Changbin</a>
+                    </li>
+
+                    <li>
+                        <a href="profile-hyunjin.html" class="footer-link">Hyunjin</a>
+                    </li>
+
+                    <li>
+                        <a href="profile-han.html" class="footer-link">Han</a>
+                    </li>
+
+                    <li>
+                        <a href="profile-felix.html" class="footer-link">Felix</a>
+                    </li>
+
+                    <li>
+                        <a href="profile-seungmin.html" class="footer-link">Seungmin</a>
+                    </li>
+
+                    <li>
+                        <a href="profile-jeongin.html" class="footer-link">Jeongin</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">Pages</p>
+                    </li>
+
+                    <li>
+                        <a href="shop.html" class="footer-link">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html" class="footer-link">Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="contactus.html" class="footer-link">Contact Us</a>
+                    </li>
+
+                </ul>
+
+                <div class="footer-list">
+                    <p class="newsletter-title">Subscribe To Us!</p>
+
+                    <p class="newsletter-text">
+                        Enter your email below to keep us with our new products!
+                    </p>
+
+                    <form action="" class="newsletter-form">
+                        <input type="email" name="email_address" placeholder="Enter your email address" required
+                            class="email-field">
+
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+
+                <div class="wrapper">
+                    <p class="copyright">
+                        &copy; 2023 Ggwendolynn Lee Rasni
+                    </p>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="https://twitter.com/Stray_Kids?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                                target="_blank" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://open.spotify.com/artist/2dIgFjalVxs4ThymZ67YCE?si=zKUfOdSCSfex28QpHHdmJg"
+                                target="_blank" class="social-link">
+                                <ion-icon name="musical-notes-outline"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/realstraykids/?hl=en" target="_blank"
+                                class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.youtube.com/@StrayKids" target="_blank" class="social-link">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.png" width="179" height="26" loading="lazy" alt="skzlogo">
+                </a>
+
+                <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method"
+                    class="w-100">
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+    -->
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - #javascript
+    -->
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/product.js" ></script>
+
+    <!-- 
+    - #account/favourites/shopping bag ICONS [ionicon link]
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
