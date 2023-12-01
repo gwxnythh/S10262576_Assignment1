@@ -70,16 +70,16 @@
         <div class="header-actions">
 
           <button class="header-action-btn" aria-label="search">
-            <ion-icon name="search-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
           </button>
 
-          <div class="header-action-btn" aria-label="user">
-            <img src="./assets/images/chanicon.jpg" class="user-pic" onclick="toggleMenu()">
+          <div class="header-action-btn">
+            <img src="./assets/images/chanicon.jpg" class="user-pic" onclick="toggleMenu()" alt="chanicon">
 
             <div class="sub-menu-wrap" id="subMenu">
               <div class="sub-menu">
                 <div class="user-info">
-                  <img src="./assets/images/chanicon.jpg">
+                  <img src="./assets/images/chanicon.jpg" alt="chanicon">
                   <h3>Hi, gwxnny</h3>
                 </div>
                 <hr>
@@ -109,13 +109,13 @@
           </div>
 
           <button class="header-action-btn" aria-label="favourite item">
-            <ion-icon name="star-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+            <ion-icon name="star-outline" aria-hidden="true"></ion-icon>
 
             <span class="btn-badge">0</span>
           </button>
 
           <button class="header-action-btn" aria-label="cart item">
-            <ion-icon name="bag-handle-outline" aria-hidden="true" aria-hidden="true"></ion-icon>
+            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
 
             <span class="btn-badge">0</span>
           </button>
@@ -347,7 +347,7 @@
             <li class="flex-item">
               <div class="feature-card">
 
-                <img src="./assets/images/feature-1.jpg" width="204" height="236" loading="lazy" alt="Guaranteed PURE"
+                <img src="./assets/images/feature-1.jpg" width="204" height="236" loading="lazy" alt="feature1"
                   class="card-icon">
 
                 <h3 class="h3 card-title">樂-STAR</h3>
@@ -362,8 +362,8 @@
             <li class="flex-item">
               <div class="feature-card">
 
-                <img src="./assets/images/feature-2.jpg" width="204" height="236" loading="lazy"
-                  alt="Completely Cruelty-Free" class="card-icon">
+                <img src="./assets/images/feature-2.jpg" width="204" height="236" loading="lazy" alt="feature2"
+                  class="card-icon">
 
                 <h3 class="h3 card-title">Motto</h3>
 
@@ -377,8 +377,8 @@
             <li class="flex-item">
               <div class="feature-card">
 
-                <img src="./assets/images/feature-3.jpg" width="204" height="236" loading="lazy"
-                  alt="Ingredient Sourcing" class="card-icon">
+                <img src="./assets/images/feature-3.jpg" width="204" height="236" loading="lazy" alt="feature3"
+                  class="card-icon">
 
                 <h3 class="h3 card-title">Company</h3>
 
@@ -535,7 +535,7 @@
 
                   <div class="card-rating">
 
-                    <div class="rating-wrapper" aria-label="5 start rating">
+                    <div class="rating-wrapper">
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
@@ -606,7 +606,7 @@
 
                   <div class="card-rating">
 
-                    <div class="rating-wrapper" aria-label="5 start rating">
+                    <div class="rating-wrapper">
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
@@ -618,7 +618,7 @@
                   </div>
 
                 </div>
-
+              </div>
             </li>
 
             <li class="scrollbar-item">
@@ -669,7 +669,7 @@
 
                   <div class="card-rating">
 
-                    <div class="rating-wrapper" aria-label="5 start rating">
+                    <div class="rating-wrapper">
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
@@ -728,7 +728,7 @@
 
                   <div class="card-rating">
 
-                    <div class="rating-wrapper" aria-label="5 start rating">
+                    <div class="rating-wrapper">
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
@@ -793,7 +793,7 @@
 
                   <div class="card-rating">
 
-                    <div class="rating-wrapper" aria-label="5 start rating">
+                    <div class="rating-wrapper">
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
@@ -852,7 +852,7 @@
 
                   <div class="card-rating">
 
-                    <div class="rating-wrapper" aria-label="5 start rating">
+                    <div class="rating-wrapper">
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
                       <ion-icon name="star" aria-hidden="true"></ion-icon>
@@ -1012,7 +1012,7 @@
             Enter your email below to keep us with our new products!
           </p>
 
-          <form action="" class="newsletter-form">
+          <form action="POST" class="newsletter-form">
             <input type="email" name="email_address" placeholder="Enter your email address" required
               class="email-field">
 
@@ -1064,7 +1064,7 @@
           <img src="./assets/images/logo.png" width="179" height="26" loading="lazy" alt="skzlogo">
         </a>
 
-        <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+        <img src="./assets/images/pay.png" width="313" height="28" alt="paym method" class="w-100">
 
       </div>
 
