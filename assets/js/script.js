@@ -1,5 +1,58 @@
 //'use strict';
 
+// #search function
+function searchFn (e) {
+  var search = document.getElementById("search");
+var inputValue = search.value.toUpperCase();
+const cards = document.querySelectorAll('.product-list #product')
+for (const card of cards.values()) {
+  const texts_to_search_for = [...card.querySelectorAll('.card-content .card-title')];
+  if (texts_to_search_for.some((txt) => txt.textContent.toUpperCase().includes(inputValue))) {
+    card.style.display = ''
+  } else {
+    card.style.display = 'none'
+  }
+}
+}
+document.addEventListener('DOMContentLoaded', function () {
+var localStorageSearch = localStorage.getItem("search"); 
+if (localStorageSearch) {
+  var search = document.getElementById("search");
+  search.setAttribute('value', localStorageSearch);
+  searchFn();  
+  localStorage.removeItem("search");
+}
+var searchForm = document.getElementById("searchForm");
+searchForm.addEventListener("submit", (e) => {
+  var currentHref = window.location.href.substring(window.location.href.lastIndexOf('/'));
+  if (currentHref !== '/shop.html') {
+  var search = document.getElementById("search");
+  var inputValue = search.value;
+  localStorage.setItem("search", inputValue); 
+  window.location.href = "shop.html";
+  } else {
+  searchFn(e);  
+  }
+  e.preventDefault();
+  
+});
+}, false);
+
+function getUrlParams() {
+var url = window.location.href;
+var vars = {};
+if (url.split("?")) {
+  var hashes = url.split("?")[1];
+  var hash = hashes.split('&');
+
+  for (var i = 0; i < hash.length; i++) {
+    params=hash[i].split("=");
+    vars[params[0]] = params[1];
+  }	
+}
+return vars;
+}
+
 // #add event on element
 const addEventOnElem = function (elem, type, callback) {
   if (elem.length > 1) {
