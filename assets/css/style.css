@@ -1750,7 +1750,7 @@ body {
   margin: 10px 0px;
   padding: 10px;
   box-sizing: border-box;
-  color: var(--white);
+  color: var(--black);
   display: flex;
   font-size: 1.4rem;
 }
