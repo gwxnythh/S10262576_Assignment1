@@ -880,8 +880,7 @@ body {
   }
 
   .grid-list>li:last-child {
-    grid-column: span 2;
-    max-width: calc(50% - 12.5px);
+    grid-column: 2;
     width: 100%;
     margin-inline: auto;
   }
