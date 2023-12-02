@@ -46,9 +46,11 @@ This section is also where you would share links to any wireframes, mockups, dia
 
     • Quantity Button – lets the user adjust the amount of quantity they would like.
 
-    • Add to Cart – lets the user add the product to cart. (currently only allows 1 qty)
+    • Add to Cart – lets the user add the product to cart.
 
     • Product – allows user to click on product to see more about the product.
+
+    • Account Overlay – allows user to logout.
 
 #### Feature(s) Left to Implement:
     •	Shopping Cart – allow them to finalize their order, remove any product they don’t want.
