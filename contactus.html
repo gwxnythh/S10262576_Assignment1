@@ -260,7 +260,7 @@
             -->
             <div class="cont-form">
                 <input type="text" placeholder="Name" />
-                <input type="email" placeholder="responsibility@thejypshop.com" />
+                <input type="email" name="email_address" placeholder="responsibility@thejypshop.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
                 <textarea name="message" id="messageInput" name="message" placeholder="Write Message"></textarea>
                 <button type="submit" onclick="validateForm()">SEND</button>
             </div>
